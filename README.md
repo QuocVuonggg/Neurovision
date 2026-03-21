@@ -82,3 +82,7 @@ python app.py
 * **Computer Vision:** OpenCV (cv2)
 * **Medical Imaging:** Pydicom
 * **Data Visualization:** Matplotlib
+
+## 📥 Download Application
+Don't want to build from source? Download the ready-to-use Windows application here:
+[![Download](https://img.shields.io/badge/Download_NeuroVision_App_(Windows)-2GB-27ae60?style=for-the-badge&logo=google-drive)](LINK_GOOGLE_DRIVE_CỦA_BẠN_Ở_ĐÂY)
