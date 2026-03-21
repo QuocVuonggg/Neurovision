@@ -20,21 +20,65 @@ By leveraging a custom **UNet architecture** for high-precision brain abnormalit
 ## 🗂️ Project Structure
 The project is organized in a modular structure to separate the UI layer from the Deep Learning engine.
 
-```text
+~~~text
 .HACKATHON/
 │
 ├── app.py                 # Main Application GUI & Workflow Logic (PyQt6)
-├── mri_analyzer.py        # AI Inference Engine & Grad-CAM Generator
-├── unet_model.py          # UNet Deep Learning Architecture Definition
-├── unet_dataset.py        # Dataset Loader & Preprocessing scripts
-├── train_unet.py          # Script used for training the UNet model
+├── brain.ico              # Application Icon for Windows executable
+├── main_ui.ui             # Raw UI layout design file
+├── requirements.txt       # Python dependencies
+├── NeuroVision.spec       # PyInstaller build specification file
 │
 ├── models/                
 │   └── unet_best.pth      # Pre-trained UNet weights (Core Model)
 │
 ├── patient_database/      # Auto-generated offline database for patient records
-│   └── PID-XXXXX/         # Patient-specific folders containing JSON data & images
 │
-├── data/                  # Directory for sample/input MRI scans
-├── requirements.txt       # Python dependencies
-└── brain.ico              # Application Icon
+└── src/                   # Source code directory for AI and logic
+    ├── mri_analyzer.py    # AI Inference Engine & Grad-CAM Generator
+    ├── train_unet.py      # Script used for training the UNet model
+    ├── unet_dataset.py    # Dataset Loader & Preprocessing scripts
+    └── unet_model.py      # UNet Deep Learning Architecture Definition
+~~~
+
+## ⚙️ Installation & Setup
+
+**1. Clone the repository and navigate to the project directory:**
+~~~bash
+git clone [https://github.com/your-username/Neurovision.git](https://github.com/your-username/Neurovision.git)
+cd Neurovision
+~~~
+
+**2. Create and activate a Virtual Environment:**
+* **Windows:**
+~~~bash
+python -m venv venv
+venv\Scripts\activate
+~~~
+* **Mac/Linux:**
+~~~bash
+python3 -m venv venv
+source venv/bin/activate
+~~~
+
+**3. Install the required dependencies:**
+~~~bash
+pip install -r requirements.txt
+~~~
+
+## 🚀 How to Run the Application
+Ensure your virtual environment is activated, then run the main application file:
+~~~bash
+python app.py
+~~~
+* **Step 1:** Enter patient details (Name, Age, Gender).
+* **Step 2:** Drag and drop MRI files into the queue.
+* **Step 3:** Click **"START MRI ANALYSIS"**.
+* **Step 4:** Review the results, edit AI findings if necessary, and export the final PDF Report.
+
+## 🛠️ Tech Stack
+* **Frontend:** PyQt6
+* **Deep Learning:** PyTorch, Torchvision
+* **Computer Vision:** OpenCV (cv2)
+* **Medical Imaging:** Pydicom
+* **Data Visualization:** Matplotlib
