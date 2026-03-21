@@ -1,0 +1,22 @@
+# Môi trường ảo (Virtual Environment)
+venv/
+.venv/
+env/
+
+# Dữ liệu lớn hoặc nhạy cảm
+data/
+
+# File cấu hình của VS Code
+.vscode/
+
+# File rác của Python và Build
+__pycache__/
+*.pyc
+data/
+build/
+dist/
+patient_database/
+
+# Các file hệ thống khác
+.DS_Store
+Thumbs.db
