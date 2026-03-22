@@ -20,3 +20,7 @@ patient_database/
 # Các file hệ thống khác
 .DS_Store
 Thumbs.db
+app.spec
+
+*.zip
+*.exe
