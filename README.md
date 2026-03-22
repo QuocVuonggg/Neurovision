@@ -87,3 +87,11 @@ python app.py
 Don't want to build from source? Download the ready-to-use Windows application here:
 
 [![Download](https://img.shields.io/badge/Download_NeuroVision_App_%28Windows%29-2GB-27ae60?style=for-the-badge&logo=google-drive)](https://drive.google.com/drive/folders/1wVroN6oLREpM12q5A44W6QByC2MidMh0?usp=drive_link)
+
+## ⚖️ License & Disclaimer
+
+### License
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+### Medical Disclaimer
+**NeuroVision** is an AI-assisted research prototype developed for the TASCO Hackathon. It is **NOT** a certified medical device and is not intended for official clinical diagnosis or treatment decisions. All AI-generated outputs (segmentations, heatmaps, and reports) must be reviewed and validated by a qualified medical professional. The authors and developers are not liable for any diagnostic errors or medical outcomes resulting from the use of this software.
